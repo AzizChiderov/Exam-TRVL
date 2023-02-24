@@ -1,0 +1,247 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+  * {
+      color: #ffff;
+      font-family: 'Montserrat', sans-serif;
+      box-sizing: border-box;
+      transition: 0.2s;
+      padding: 0;
+      margin: 0;
+  }
+
+  header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(./images/bg\ image.png);
+      background-size: cover;
+      width: 100%;
+      height: 852px;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      margin-top: 29px;
+  }
+
+  .logo {
+      position: absolute;
+  }
+  .logo-header img {
+    margin-left: 40px;
+  }
+
+  .link-header a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      margin-right: 60px;
+  }
+
+  .link-header a:last-child {
+      margin-right: 40px;
+  }
+
+  .link-header a:hover {
+      color: #D28888;
+  }
+
+  .title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .title h1 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 150px;
+      line-height: 183px;
+      letter-spacing: 0.3em;
+      margin-bottom: 70px;
+  }
+
+  .title p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 0.2em;
+  }
+
+  .main {
+      display: flex;
+      justify-content: center;
+      background-color: #000000;
+      width: 100%;
+      height: 740px;
+  }
+
+  .text {
+      width: 348px;
+      height: 286px;
+      margin: 116px 157px 252px 186px;
+  }
+
+  .text h2 {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 0.1em;
+      margin-bottom: 37px;
+  }
+
+  .text p {
+      font-weight: 400;
+      font-size: 156px 167px 0e 18px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+  }
+
+  .small-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 116px 25px 167px 0;
+  }
+
+  .big-img {
+      margin: 116px 156px 167px 0;
+  }
+
+  .aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(./images/bg\ 2.png);
+      background-size: cover;
+      width: 100%;
+      height: 625px;
+  }
+
+  .aside h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      margin-top: 92px;
+      margin-bottom: 34px;
+  }
+
+  .aside p {
+      text-align: center;
+      width: 721px;
+      height: 110px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      margin-bottom: 100px;
+  }
+
+  input[type="email"] {
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: transparent;
+      width: 335px;
+      outline: none;
+      padding-bottom: 14px;
+  }
+
+  input::placeholder {
+      color: #ffff;
+      text-align: center;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+  }
+
+  button {
+      border: none;
+      background-color: #000000;
+      box-shadow: 0px 0px 50px 5px #813434;
+      width: 335px;
+      height: 64px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      margin-top: 25px;
+  }
+
+  button:hover {
+      background-color: #2B2B2B;
+      box-shadow: 0px 0px 50px 5px #813434;
+  }
+
+  button:active {
+      background-color: #AF2A2A;
+      box-shadow: 0px 0px 50px 5px #813434;
+  }
+
+  footer {
+      background-color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 40px;
+  }
+
+  .link .s-icon {
+      margin-right: 22px;
+  }
+
+  .link .s-icon:last-child {
+      margin-right: 0;
+  }
+
+  .link .s-icon:hover path {
+      fill: #D28888;
+  }
+
+  .link .s-icon:active path {
+      fill: #AF2A2A;
+  }
+
+  footer .icon {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      margin: 0;
+  }
+
+  footer .icon:hover {
+      color: #D28888;
+  }
+
+  @media screen and (max-width: 1200px) {
+      header {
+          width: 815px;
+          height: 852px;
+          margin: auto;
+      }
+
+      nav {
+          width: 815px;
+      }
+
+      .title {
+          text-align: center;
+          margin: auto;
+      }
+
+      .title h1 {
+          font-size: 90px;
+      }
+        
+  }
