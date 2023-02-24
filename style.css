@@ -31,8 +31,9 @@
   .logo {
       position: absolute;
   }
+
   .logo-header img {
-    margin-left: 40px;
+      margin-left: 40px;
   }
 
   .link-header a {
@@ -50,6 +51,10 @@
 
   .link-header a:hover {
       color: #D28888;
+  }
+
+  .burger-menu {
+      display: none;
   }
 
   .title {
@@ -98,6 +103,7 @@
   }
 
   .text p {
+      height: 286px;
       font-weight: 400;
       font-size: 156px 167px 0e 18px;
       line-height: 22px;
@@ -192,6 +198,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
       padding: 32px 40px;
   }
 
@@ -224,6 +231,10 @@
       color: #D28888;
   }
 
+  footer .icon:active {
+      color: #AF2A2A;
+  }
+
   @media screen and (max-width: 1200px) {
       header {
           width: 815px;
@@ -232,7 +243,36 @@
       }
 
       nav {
-          width: 815px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+      }
+
+      .link-header a {
+          display: none;
+      }
+
+      .burger-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          height: auto;
+          margin-right: 46px;
+          margin-top: -5px;
+      }
+
+      .burger-menu svg {
+          margin-bottom: 6px;
+      }
+
+      .burger-menu:hover .vector path {
+          fill: #D28888;
+      }
+
+      .burger-menu:active .vector path {
+          fill: #AF2A2A;
       }
 
       .title {
@@ -241,7 +281,146 @@
       }
 
       .title h1 {
-          font-size: 90px;
+          font-size: 5.6em;
+          margin-bottom: 143px;
       }
-        
+
+      .main {
+          display: flex;
+          flex-flow: column nowrap;
+          position: relative;
+          width: 815px;
+          height: 919px;
+          margin: -1px auto;
+      }
+
+      .text {
+          width: 50%;
+          height: 176;
+          text-align: left;
+          margin: 30px 0 59px 112px;
+      }
+
+      .small-img {
+          align-items: start;
+          margin: 0 25px 111px 112px;
+      }
+
+      .small-img img:first-child {
+          margin-bottom: 22px;
+      }
+
+      .big-img {
+          position: absolute;
+          right: 112px;
+          bottom: 95px;
+          margin: 0;
+      }
+
+      .aside {
+          width: 815px;
+          height: 625px;
+          margin: 0 auto;
+      }
+
+      footer {
+          width: 815px;
+          height: 89px;
+          margin: auto;
+      }
   }
+
+  @media screen and (max-width: 790px) {
+    header {
+        width: 815px;
+        height: 852px;
+        margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+    }
+
+    .link-header a {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin-right: 46px;
+        margin-top: -5px;
+    }
+
+    .burger-menu svg {
+        margin-bottom: 6px;
+    }
+
+    .burger-menu:hover .vector path {
+        fill: #D28888;
+    }
+
+    .burger-menu:active .vector path {
+        fill: #AF2A2A;
+    }
+
+    .title {
+        text-align: center;
+        margin: auto;
+    }
+
+    .title h1 {
+        font-size: 5.6em;
+        margin-bottom: 143px;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        width: 815px;
+        height: 919px;
+        margin: -1px auto;
+    }
+
+    .text {
+        width: 50%;
+        height: 176;
+        text-align: left;
+        margin: 30px 0 59px 112px;
+    }
+
+    .small-img {
+        align-items: start;
+        margin: 0 25px 111px 112px;
+    }
+
+    .small-img img:first-child {
+        margin-bottom: 22px;
+    }
+
+    .big-img {
+        position: absolute;
+        right: 112px;
+        bottom: 95px;
+        margin: 0;
+    }
+
+    .aside {
+        width: 815px;
+        height: 625px;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 815px;
+        height: 89px;
+        margin: auto;
+    }
+  } 
